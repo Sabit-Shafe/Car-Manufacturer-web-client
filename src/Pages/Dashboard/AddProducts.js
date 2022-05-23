@@ -36,8 +36,8 @@ const AddProducts = () => {
                     name: data.name,
                     description: data.description,
                     price: data.price,
-                    quantity: data.quantity,
-                    Minquantity: data.Minquantity,
+                    quantity: parseInt(data.quantity),
+                    minimumQuantity: parseInt(data.Minquantity),
                     img: img
                 }
                 // send to your database 

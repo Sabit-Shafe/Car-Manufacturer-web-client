@@ -19,14 +19,15 @@ const Dashboard = () => {
                 <ul class="menu p-4 overflow-y-auto w-48 bg-base-100 text-base-content">
                     {/* <!-- Sidebar content here --> */}
                     <li><Link to="/dashboard">My Appointments</Link></li>
-                    <li><Link to="/dashboard/review">My Reviews</Link></li>
+                    <li><Link to="/dashboard/AddReview">Add a Review</Link></li>
                     <li><Link to="/dashboard/history">My History</Link></li>
                     <li><Link to="/dashboard/history">My portfolio</Link></li>
                    
                     { admin && <>
                         <li><Link to="/dashboard/users">All Users</Link></li>
+                        
                         <li><Link to="/dashboard/AddProducts">Add a Product</Link></li>
-                        <li><Link to="/dashboard/manageDoctor">Manage Products</Link></li>
+                    
                     </>}
                 </ul>
 

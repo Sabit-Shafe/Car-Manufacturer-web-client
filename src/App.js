@@ -14,15 +14,23 @@ import Users from './Pages/Dashboard/Users';
 import RequireAdmin from './Pages/Login/RequireAdmin'
 import AddProducts from './Pages/Dashboard/AddProducts';
 import Home from './Pages/Home/Home';
+import Purchase from './Pages/Purchase/Purchase';
+import AddReview from './Pages/Dashboard/AddReview';
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <Routes>
+      <Route path="/products/:productsID" element={
+          <RequireAuth>
+            <Purchase></Purchase>
+          </RequireAuth>
+        }></Route>
       <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
       <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
       <Route path="AddProducts" element={<RequireAdmin><AddProducts></AddProducts></RequireAdmin>}></Route>
+      <Route path="AddReview" element={<RequireAdmin><AddReview></AddReview></RequireAdmin>}></Route>
         </Route>
       <Route path="login" element={<Login />} />
 
@@ -30,7 +38,8 @@ function App() {
         <Route path="blogs" element={<Blogs/>} />
         <Route path="/" element={<Home/>} />
         <Route path="/home" element={<Home/>} />
-        <Route path="myportfoloio" element={<MyPortfolio></MyPortfolio>} />
+        
+        <Route path="MyPortfolio" element={<MyPortfolio></MyPortfolio>} />
       </Routes>
       <Footer/>
       <ToastContainer/>
