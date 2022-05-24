@@ -6,6 +6,7 @@ const Product = ({ products }) => {
     const navigateToProductDetail = id => {
         navigate(`/products/${id}`);
     }
+    console.log("product gula ekhane", products);
     return (
         <div>
             <div className="card lg:max-w-lg bg-base-100 shadow-xl">
