@@ -19,7 +19,7 @@ const Product = ({ products }) => {
                     <h3>price per unit: {products.price}<span> $</span></h3>
                     <h4>available quantity: {products.quantity}</h4>
                 </div>
-                <div class="card-actions justify-end ">
+                <div class="card-actions justify-center mb-2 ">
                     <button onClick={() => navigateToProductDetail(products._id)} className='btn btn-primary' class="btn btn-primary">Buy Now</button>
                 </div>
             </div>

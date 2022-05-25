@@ -98,10 +98,10 @@ const AddProducts = () => {
                     <label className="label">
                         <span className="label-text">Description</span>
                     </label>
-                    <input
+                    <textarea
                         type="description"
                         placeholder="description"
-                        className="input input-bordered w-full max-w-xs"
+                        className="input input-bordered w-full max-w-xs textarea"
                         {...register("description", {
                             required: {
                                 value: true,
