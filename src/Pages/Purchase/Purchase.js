@@ -18,8 +18,6 @@ const Purchase = () => {
     
     const onSubmit = (order) => {
         
-       
-
         console.log(order);
         fetch('http://localhost:5000/order', {
             method: 'POST',
@@ -42,7 +40,6 @@ const Purchase = () => {
 
     };
 
-
     return (
         <div className="flex h-screen justify-center items-center mt-20 mb-20">
             <div class="card lg:card-side bg-base-100 shadow-xl">
@@ -51,8 +48,6 @@ const Purchase = () => {
                     <h2 class="card-title">{products.name}</h2>
                     <p> Product Description: {products.description}</p>
                     <h3 className="text-lg font-bold text-fuchsia-500">price per unit: {products.price}<span> $</span></h3>
-
-
                  </div>
            </div>
            <div className=" mx-5">
@@ -137,24 +132,6 @@ const Purchase = () => {
                     <input className='mb-2 input input-bordered w-full max-w-xs' placeholder='price' type="number" {...register("price")} />
                 </div>
 
-                {/* <div className="form-control w-full max-w-xs">
-    <label className="label">
-        <span className="label-text">Photo</span>
-    </label>
-    <input
-        type="file"
-        className="input input-bordered w-full max-w-xs"
-        {...register("image", {
-            required: {
-                value: true,
-                message: 'Image is Required'
-            }
-        })}
-    />
-    <label className="label">
-        {errors.name?.type === 'required' && <span className="label-text-alt text-red-500">{errors.name.message}</span>}
-    </label>
-</div> */}
 
                 <input className='btn w-full max-w-xs text-white' type="submit" value="Purchase" />
             </form>
