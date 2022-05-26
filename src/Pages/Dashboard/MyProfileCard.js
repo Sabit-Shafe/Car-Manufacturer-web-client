@@ -47,12 +47,12 @@ const MyProfileCard = ({ myprofile }) => {
 
     return (
         <div>
-            <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row-reverse">
-                    <div class="text-center lg:text-left">
-                        <h1 class="text-5xl font-bold text-blue-500">Name : {myprofile.name}</h1>
-                        <h1 class="text-3xl font-bold text-base-500 mt-5">Email : {myprofile.email}</h1>
-                        <p class="py-6"></p>
+            <div className="hero min-h-screen bg-base-200">
+                <div className="hero-content flex-col lg:flex-row-reverse">
+                    <div className="text-center lg:text-left">
+                        <h1 className="text-5xl font-bold text-blue-500">Name : {myprofile.name}</h1>
+                        <h1 className="text-3xl font-bold text-base-500 mt-5">Email : {myprofile.email}</h1>
+                        <p className="py-6"></p>
                     </div>
                     {/* <div className="mt-40"> 
                     {
