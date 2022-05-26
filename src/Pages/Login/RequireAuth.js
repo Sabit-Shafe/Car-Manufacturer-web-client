@@ -7,6 +7,7 @@ import Loading from '../Shared/Loading';
 const RequireAuth = ({children}) => {
     const [user, loading] = useAuthState(auth);
     const location = useLocation();
+    
 
     if(loading){
         return <Loading></Loading>
@@ -18,4 +19,4 @@ const RequireAuth = ({children}) => {
     return children;
 };
 
-export default RequireAuth;
+export default RequireAuth ;
