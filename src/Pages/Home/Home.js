@@ -5,6 +5,7 @@ import CountDown from './CountDown';
 import NewsLetter from './NewsLetter';
 import Products from './Products';
 import Reviews from './Reviews';
+import Supports from './Supports';
 
 const Home = () => {
     return (
@@ -14,6 +15,7 @@ const Home = () => {
             <Reviews></Reviews>
             <CountDown></CountDown>
             <Products></Products>
+            <Supports></Supports>
             <NewsLetter/>
 
         </div>

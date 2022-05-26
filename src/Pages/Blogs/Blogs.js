@@ -2,7 +2,7 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion accordion-flush mt-5" id="accordionFlushExample">
             <div class="accordion-item border-t-0 border-l-0 border-r-0 rounded-none bg-white border border-gray-200">
                 <h2 class="accordion-header mb-0" id="flush-headingOne">
                     <button class="accordion-button
@@ -127,17 +127,15 @@ const Blogs = () => {
           transition
           focus:outline-none" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                         aria-expanded="false" aria-controls="flush-collapseThree">
-                        You have an array of products. Each product has a name, price, description, etc. How will you implement a search to find products by name?
+                        Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts?
                     </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
                     data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body py-4 px-5">Placeholder content for this accordion, which is intended to
-                        demonstrate
-                        the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-                        happening here in terms of content, but just filling up the space to make it look, at least at first
-                        glance,
-                        a bit more representative of how this would look in a real-world application.</div>
+                    <div class="accordion-body py-4 px-5">
+                       products.find(product ={'>'} givenName === product.name)
+                        When you directly update the state, it does not change this. state immediately. Instead, it creates a pending state transition, and accessing it after calling this method will only return the present value. You will lose control of the state across all components.
+                        React compares the previous state with the updated state to decide if the component needs to be re-rendered. Modifying the state directly will disturb this process. As a result the component will behave unexpectedly. In some cases not re-rendering at all even though the state has been modified.</div>
                 </div>
             </div>
         </div>

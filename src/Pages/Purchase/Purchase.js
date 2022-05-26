@@ -161,7 +161,7 @@ const Purchase = () => {
                     </label>
                 </div>
 
-                {/* <div className="form-control w-full max-w-xs">
+                <div className="form-control w-full max-w-xs">
                     <label className="label">
                         <span className="label-text">Address</span>
                     </label>
@@ -177,7 +177,7 @@ const Purchase = () => {
 
                         })}
                     />
-                </div> */}
+                </div>
                 <div className="form-control w-full max-w-xs">
                     <label className="label">
                         <span className="label-text">Quantity</span>
