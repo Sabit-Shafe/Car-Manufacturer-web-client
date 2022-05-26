@@ -11,18 +11,18 @@ const AddReview = () => {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',
-                    //     authorization: `Bearer ${localStorage.getItem('accessToken')}`
+                        authorization: `Bearer ${localStorage.getItem('accessToken')}`
                      },
                     body: JSON.stringify(review)
                 })
                 .then(res =>res.json())
                 .then(inserted =>{
                     if(inserted.insertedId){
-                        toast.success('order Successfull')
+                        toast.success('Review added Successfully')
                         reset();
                     }
                     else{
-                        toast.error('Failed to order');
+                        toast.error('Failed to add review');
                     }
                 })
 

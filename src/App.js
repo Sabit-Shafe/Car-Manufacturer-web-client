@@ -37,7 +37,7 @@ function App() {
       <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
       <Route path="AddProducts" element={<RequireAdmin><AddProducts></AddProducts></RequireAdmin>}></Route>
       <Route path="payment/:id" element={<Payment></Payment>}></Route>
-      <Route path="ManageOrders" element={<ManageOrders/>}></Route>
+      <Route path="ManageOrders" element={<RequireAdmin><ManageOrders/></RequireAdmin>}></Route>
       <Route path="ManageProducts" element={<ManageProducts/>}></Route>
       <Route path="AddReview" element={<RequireAuth><AddReview></AddReview></RequireAuth>}></Route>
       <Route path="MyProfile" element={<RequireAuth><MyProfile></MyProfile></RequireAuth>}></Route>

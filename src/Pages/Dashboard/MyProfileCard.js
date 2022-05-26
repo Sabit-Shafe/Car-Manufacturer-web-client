@@ -1,16 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, {  } from 'react';
+// import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
+// import auth from '../../firebase.init';
 
 const MyProfileCard = ({ myprofile }) => {
-    const [shouldRemount, setShouldRemount] = useState(false)
+    // const [shouldRemount, setShouldRemount] = useState(false)
+    // const [user] = useAuthState(auth);
 
-    const [profile, setProfile] = useState([]);
-    useEffect(() => {
-        fetch('http://localhost:5000/myprofile')
-            .then(res => res.json())
-            .then(data => setProfile(data));
-    }, [])
+    // const [profile, setProfile] = useState([]);
+    // useEffect(() => {
+    //     fetch(`http://localhost:5000/myprofile?email=${user.email}`)
+        
+        
+    //         .then(res => res.json())
+    //         .then(data => setProfile(data));
+            
+    // }, [user])
 
 
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
@@ -48,7 +54,7 @@ const MyProfileCard = ({ myprofile }) => {
                         <h1 class="text-3xl font-bold text-base-500 mt-5">Email : {myprofile.email}</h1>
                         <p class="py-6"></p>
                     </div>
-                    <div className="mt-40"> 
+                    {/* <div className="mt-40"> 
                     {
                         profile.map((p) => <div className="mt-40 text-3xl font-bold text-base-500 " key=
                         {p._id} 
@@ -61,9 +67,9 @@ const MyProfileCard = ({ myprofile }) => {
                         </div>)
                     }
                    
-                    </div>
+                    </div> */}
                     <div>
-            <h2 className="text-2xl">Add a New Product</h2>
+            <h2 className="text-2xl">Update profile</h2>
             <form onSubmit={handleSubmit(onSubmit)}>
 
                 <div className="form-control w-full max-w-xs">

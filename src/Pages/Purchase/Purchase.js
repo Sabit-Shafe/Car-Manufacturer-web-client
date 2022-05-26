@@ -100,7 +100,7 @@ const Purchase = () => {
 
 
     return (
-        <div className="flex h-screen justify-center items-center mt-12">
+        <div className="flex h-screen justify-center items-center mt-20 mb-20">
             <div class="card lg:card-side bg-base-100 shadow-xl">
                 <figure><img src={products.img} alt="product.name" /></figure>
                 <div class="card-body">
@@ -120,7 +120,7 @@ const Purchase = () => {
                     <input
                         // disabled value={products?.name || ''}
                         type="text"
-                        placeholder="Name"
+                        placeholder=" Product Name"
                         className="input input-bordered w-full max-w-xs"
                         {...register("ProductName")}
                     />
