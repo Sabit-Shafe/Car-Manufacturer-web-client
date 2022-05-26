@@ -19,7 +19,7 @@ const Products = () => {
         <div className='my-28'>
         <div className='text-center'>
             <h2 className='text-4xl text-fuchsia-700 font-bold uppercase '>Best Car Parts</h2>
-            <div class="divider bg-red-300"></div>
+            <div className="divider bg-red-300"></div>
         </div>
         <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 '>
             {
