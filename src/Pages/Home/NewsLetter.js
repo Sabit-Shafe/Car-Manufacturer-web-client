@@ -10,7 +10,7 @@ const NewsLetter = () => {
             </div>
             <div className="text-center font-bold text-3xl text-red-300">
             <button className="text-center mb-5" variant="primary" type="submit">
-                Subcribe
+                Subcribe 
             </button>
             </div>
         </div>
