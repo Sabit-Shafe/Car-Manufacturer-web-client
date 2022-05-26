@@ -26,35 +26,33 @@ import MyProfile from './Pages/Dashboard/MyProfile';
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
       <Routes>
-      <Route path="/products/:productsID" element={
+        <Route path="/products/:productsID" element={
           <RequireAuth>
             <Purchase></Purchase>
           </RequireAuth>
         }></Route>
-      <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
-      <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
-      <Route path="AddProducts" element={<RequireAdmin><AddProducts></AddProducts></RequireAdmin>}></Route>
-      <Route path="payment/:id" element={<Payment></Payment>}></Route>
-      <Route path="ManageOrders" element={<RequireAdmin><ManageOrders/></RequireAdmin>}></Route>
-      <Route path="ManageProducts" element={<ManageProducts/>}></Route>
-      <Route path="AddReview" element={<RequireAuth><AddReview></AddReview></RequireAuth>}></Route>
-      <Route path="MyProfile" element={<RequireAuth><MyProfile></MyProfile></RequireAuth>}></Route>
-      <Route path="MyOrder" element={<RequireAuth><MyOrders></MyOrders></RequireAuth>}></Route>
+        <Route path="dashboard" element={<RequireAuth><Dashboard /></RequireAuth>} >
+          <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+          <Route path="AddProducts" element={<RequireAdmin><AddProducts></AddProducts></RequireAdmin>}></Route>
+          <Route path="payment/:id" element={<Payment></Payment>}></Route>
+          <Route path="ManageOrders" element={<RequireAdmin><ManageOrders /></RequireAdmin>}></Route>
+          <Route path="ManageProducts" element={<ManageProducts />}></Route>
+          <Route path="AddReview" element={<RequireAuth><AddReview></AddReview></RequireAuth>}></Route>
+          <Route path="MyProfile" element={<RequireAuth><MyProfile></MyProfile></RequireAuth>}></Route>
+          <Route path="MyOrder" element={<RequireAuth><MyOrders></MyOrders></RequireAuth>}></Route>
         </Route>
-      <Route path="login" element={<Login />} />
-
+        <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
-        <Route path="blogs" element={<Blogs/>} />
-        <Route path="/" element={<Home/>} />
-        <Route path="/home" element={<Home/>} />
-        <Route path="*"element={<Notfound/>} />
-        
+        <Route path="blogs" element={<Blogs />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="*" element={<Notfound />} />
         <Route path="MyPortfolio" element={<MyPortfolio></MyPortfolio>} />
       </Routes>
-      <Footer/>
-      <ToastContainer/>
+      <Footer />
+      <ToastContainer />
     </div>
   );
 }
