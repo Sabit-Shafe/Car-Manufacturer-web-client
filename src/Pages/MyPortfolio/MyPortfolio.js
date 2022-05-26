@@ -3,11 +3,11 @@ import image from '../../assets/images/16700234_1806684386266672_758632848178782
 
 const MyPortfolio = () => {
     return (
-        <div class="hero min-h-screen bg-base-200">
-  <div class="hero-content flex-col lg:flex-row">
-    <img src={image} alt="" class="max-w-sm rounded-lg shadow-2xl" />
+        <div className="hero min-h-screen bg-base-200">
+  <div className="hero-content flex-col lg:flex-row">
+    <img src={image} alt="" className="max-w-sm rounded-lg shadow-2xl" />
     <div>
-      <h1 class="text-5xl font-bold">Abdullah Sabit Shafe</h1>
+      <h1 className="text-5xl font-bold">Abdullah Sabit Shafe</h1>
       <p class="py-6">Junior Frontend Developer.
       Bsc in CSE.
       </p>
