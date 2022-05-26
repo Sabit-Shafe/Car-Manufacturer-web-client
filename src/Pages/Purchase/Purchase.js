@@ -13,61 +13,11 @@ const Purchase = () => {
     }
     const { productsID } = useParams();
     const [products] = useProductDetail(productsID)
-    // const [user, loading, error] = useAuthState(auth);
-    // const imageStorageKey='469f118d1ab297a7fcdd3af08feb5555';
-    // const [updatedQuantity, setUpdatedQuantity] = useState()
+    
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-    // const HandleAddQuantity = async quantity => {
-    //     const url = `http://localhost:5000/product/${productsID}`
-    //     fetch(url, {
-    //         method: "PUT",
-    //         headers: {
-    //             'content-type': 'application/json'
-
-    //         },
-    //         body: JSON.stringify({ quantity: quantity })
-
-    //     })
-    //         .then(res => res.json())
-    //         .then(data => {
-    //             console.log('succsessful', data);
-    //             setUpdatedQuantity();
-    //             // setShouldRemount(!shouldRemount)
-    //         })
-
-    // }
+    
     const onSubmit = (order) => {
-        // const image = data.image[0];
-        // const formData = new FormData();
-        // formData.append('image', image);
-        // const url = `https://api.imgbb.com/1/upload?key=${imageStorageKey}`;
-        // fetch(url, {
-        //     method: 'POST',
-        //     body: formData
-        // })
-        // .then(res=>res.json())
-        // .then(result =>{
-        //     if(result.success){
-        //         const img = result.data.url;
-        //         const product = {
-        //             name: data.name,
-        //             description: data.description,
-        //             price: data.price,
-        //             quantity: parseInt(data.quantity),
-        //             minimumQuantity: parseInt(data.Minquantity),
-        //             img: img
-        //         }
-        // send to your database 
-        // const order = {
-
-
-        //     name: user.displayName,
-        //     email: user.email,
-        //     productsName : products.name,
-        //     quantity: quantity,
-        //     price: price,
-
-        // }
+        
        
 
         console.log(order);
@@ -91,12 +41,6 @@ const Purchase = () => {
             })
 
     };
-
-    //     })
-    // }
-
-
-
 
 
     return (
