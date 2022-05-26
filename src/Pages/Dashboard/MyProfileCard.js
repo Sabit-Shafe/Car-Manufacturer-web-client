@@ -10,7 +10,7 @@ const MyProfileCard = ({ myprofile }) => {
 
     // const [profile, setProfile] = useState([]);
     // useEffect(() => {
-    //     fetch(`http://localhost:5000/myprofile?email=${user.email}`)
+    //     fetch(`https://arcane-cove-77860.herokuapp.com/myprofile?email=${user.email}`)
         
         
     //         .then(res => res.json())
@@ -25,7 +25,7 @@ const MyProfileCard = ({ myprofile }) => {
 
     
                 const onSubmit = (myprofile) => {
-                fetch('http://localhost:5000/myprofile', {
+                fetch('https://arcane-cove-77860.herokuapp.com/myprofile', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

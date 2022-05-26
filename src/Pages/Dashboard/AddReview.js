@@ -7,7 +7,7 @@ const AddReview = () => {
     const onSubmit =(review)=> {
       
                 console.log(review);
-                fetch('http://localhost:5000/review', {
+                fetch('https://arcane-cove-77860.herokuapp.com/review', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

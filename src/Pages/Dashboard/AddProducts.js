@@ -41,7 +41,7 @@ const AddProducts = () => {
                     img: img
                 }
                 // send to your database 
-                fetch('http://localhost:5000/product', {
+                fetch('https://arcane-cove-77860.herokuapp.com/product', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

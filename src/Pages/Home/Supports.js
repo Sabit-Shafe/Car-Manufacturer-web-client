@@ -5,7 +5,7 @@ const Supports = () => {
 
     const [supports, setSupports] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/support')
+        fetch('https://arcane-cove-77860.herokuapp.com/support')
             .then(res => res.json())
             .then(data => setSupports(data));
     }, [])

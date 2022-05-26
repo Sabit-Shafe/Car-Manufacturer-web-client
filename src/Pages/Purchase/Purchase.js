@@ -18,7 +18,7 @@ const Purchase = () => {
     const onSubmit = (order) => {
 
         console.log(order);
-        fetch('http://localhost:5000/order', {
+        fetch('https://arcane-cove-77860.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
