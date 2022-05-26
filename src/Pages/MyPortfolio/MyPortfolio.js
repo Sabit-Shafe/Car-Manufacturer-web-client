@@ -8,7 +8,7 @@ const MyPortfolio = () => {
     <img src={image} alt="" className="max-w-sm rounded-lg shadow-2xl" />
     <div>
       <h1 className="text-5xl font-bold">Abdullah Sabit Shafe</h1>
-      <p class="py-6">Junior Frontend Developer.
+      <p className="py-6">Junior Frontend Developer.
       Bsc in CSE.
       </p>
       <p >EMAIL : abdullahsabit32@gmail.com</p>
@@ -16,7 +16,7 @@ const MyPortfolio = () => {
       <a href="https://sports-gear-warehouse-5e15c.web.app/"><p className="text-bold text-primary">Sports Gear warehouse </p></a>
       <a href="https://visa-consultant-2f7c5.web.app/"><p className="text-bold text-primary">Visa Consultancy Services</p></a>
       <a href="https://proudct-review-shafe.netlify.app/"><p className="text-bold text-primary">Product Review app</p></a>
-     <a href="https://drive.google.com/file/d/14D-aGN6mLgvn20P35YlxF5jA8pmKQwnp/view" > <button  class="btn btn-primary mt-5">My resume</button></a> 
+     <a href="https://drive.google.com/file/d/14D-aGN6mLgvn20P35YlxF5jA8pmKQwnp/view" > <button  className="btn btn-primary mt-5">My resume</button></a> 
     </div>
   </div>
 </div>
