@@ -20,7 +20,7 @@ const Product = ({ products }) => {
                     <h4>available quantity: {products.quantity}</h4>
                 </div>
                 <div class="card-actions justify-center mb-2 ">
-                    <button onClick={() => navigateToProductDetail(products._id)} className='btn btn-primary' class="btn btn-primary">Buy Now</button>
+                    <button onClick={() => navigateToProductDetail(products._id)} className='btn btn-primary'>Buy Now</button>
                 </div>
             </div>
         </div>
