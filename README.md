@@ -3,6 +3,12 @@
 https://car-parts-manufacture-13c8f.web.app/
 
 # <h1>Project specification </h1>
+
+admin access:
+email: admin@gmail.com
+pass: admin123
+
+
 -------------------------------------------------------------------------
 * In this Project working with react js.
 * UI design by Tailwind css and responsive
