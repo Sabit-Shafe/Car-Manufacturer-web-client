@@ -3,13 +3,13 @@ import image1 from '../../assets/images/auto-parts-1.png'
 
 const Banner = () => {
     return (
-        <div class="hero min-h-screen bg-base-200">
-  <div class="hero-content flex-col lg:flex-row-reverse">
-    <img class="h-60" src={image1}  alt=""/>
+        <div className="hero min-h-screen bg-base-200">
+  <div className="hero-content flex-col lg:flex-row-reverse">
+    <img className="h-60" src={image1}  alt=""/>
     <div>
-      <h1 class="text-5xl font-bold">Car Mania</h1>
-      <p class="py-6">Perfect auto car parts and better quality</p>
-      <button class="btn btn-primary">Get Started</button>
+      <h1 className="text-5xl font-bold">Car Mania</h1>
+      <p className="py-6">Perfect auto car parts and better quality</p>
+      <button className="btn btn-primary">Get Started</button>
     </div>
   </div>
 </div>
